@@ -6,11 +6,15 @@ body {
 
 .trigger {
   display: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .hamburguer {
   margin-right: 10px;
   float: left;
+  cursor: pointer;
 }
 .hamburguer span {
   height: 3px;
