@@ -1,0 +1,62 @@
+body {
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.trigger {
+  display: none;
+}
+
+.hamburguer {
+  margin-right: 10px;
+  float: left;
+}
+.hamburguer span {
+  height: 3px;
+  width: 30px;
+  background-color: #000;
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.trigger:checked ~ .hamburguer span:first-child {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.trigger:checked ~ .hamburguer span:last-child {
+  transform: rotate(-45deg);
+  top: -8px;
+}
+.trigger:checked ~ .hamburguer span:nth-child(2) {
+  opacity: 0;
+}
+
+.trigger:checked ~ nav {
+  left: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+nav {
+  background-color: gold;
+  width: 100vw;
+  padding: 30px 70px;
+  margin-top: 30px;
+  position: absolute;
+  left: -100vw;
+  box-sizing: border-box;
+  transition: all 0.7s ease-in-out;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin-bottom: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
